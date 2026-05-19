@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: John Shao # the main title
 
-tagline: 专注人工智能和实时音视频技术 # it will display as the subtitle
+tagline: AI & WebRTC # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
