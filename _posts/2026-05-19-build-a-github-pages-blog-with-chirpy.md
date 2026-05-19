@@ -1,7 +1,7 @@
 ---
 title: 用 Chirpy 主题搭建 GitHub Pages 博客
 date: 2026-05-19 13:30:18 +0800
-categories: [博客]
+categories: [建站]
 tags: [github, pages]
 ---
 
