@@ -73,7 +73,7 @@ bundle exec jekyll s
 ## 几个常见坑
 
 - 别直接 fork `jekyll-theme-chirpy`，那是给想改主题源码的开发者用的，普通用户用 starter 升级方便得多（直接更新 `Gemfile` 里的版本号就行）。
-- Pages 的 Source 一定要选 **GitHub Actions**，选成分支会构建失败，因为 Chirpy 用了一些 GitHub Pages 安全模式不允许的脚本。
+- 仓库 Pages 的 Source 一定要选 **GitHub Actions**，选成分支会构建失败，因为 Chirpy 用了一些 GitHub Pages 安全模式不允许的脚本。
 - 头像、favicon 这些资源要按 `_config.yml` 里写的路径放到 `assets/img/` 下。GitHub 网页端不能直接创建空文件夹，得先建个占位文件。
 - 第一次部署后没显示，去 **Actions** 标签看看构建日志，多半是 `_config.yml` 的 YAML 语法错了（缩进或冒号后面少了空格）。
 
