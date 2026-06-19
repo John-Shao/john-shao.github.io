@@ -58,7 +58,7 @@ claude remote-control
 | `--spawn <mode>`                                | 服务器如何创建会话。<br />• `same-dir`（默认）：所有会话共享当前工作目录，因此如果编辑相同的文件可能会冲突。<br />• `worktree`：每个按需会话都获得自己的 [git worktree](/zh-CN/worktrees)。需要 git 存储库。<br />• `session`：单会话模式。恰好提供一个会话并拒绝其他连接。仅在启动时设置。<br />在运行时按 `w` 在 `same-dir` 和 `worktree` 之间切换。 |
 | `--capacity <N>`                                | 最大并发会话数。默认为 32。不能与 `--spawn=session` 一起使用。                                                                                                                                                                                                                                                                                         |
 | `--verbose`                                     | 显示详细的连接和会话日志。                                                                                                                                                                                                                                                                                                                             |
-| `--sandbox` / `--no-sandbox`                    | 启用或禁用沙箱以进行文件系统和网络隔离。默认关闭。                                                                                                                                                                                                                                                                                |
+| `--sandbox` / `--no-sandbox`                    | 启用或禁用沙箱以进行文件系统和网络隔离。默认关闭。                                                                                                                                                                                                                                                                                                     |
 
 ### 交互式会话
 
@@ -238,10 +238,10 @@ claude remote-control --verbose
 
 Claude Code 提供多种在不在终端的情况下工作的方式。它们在触发工作的因素、Claude 运行的位置和所需的设置量方面有所不同。
 
-| 功能 | 触发器 | Claude 运行位置 | 设置 | 最佳用途 |
-| :- | :- | :- | :- | :- |
-| **Remote Control** | 从 [claude.ai/code](https://claude.ai/code) 或 Claude 移动应用驱动运行中的会话 | 您的机器（CLI 或 VS Code） | 运行 `claude remote-control` | 从另一个设备控制进行中的工作 |
-| **网络上的 Claude Code** | 从 claude.ai/code 发送消息到云会话 | Anthropic 云基础设施 | 无需本地设置 | 启动任务而不需要本地设置 |
+| 功能                     | 触发器                                                                         | Claude 运行位置            | 设置                         | 最佳用途                     |
+| :----------------------- | :----------------------------------------------------------------------------- | :------------------------- | :--------------------------- | :--------------------------- |
+| **Remote Control**       | 从 [claude.ai/code](https://claude.ai/code) 或 Claude 移动应用驱动运行中的会话 | 您的机器（CLI 或 VS Code） | 运行 `claude remote-control` | 从另一个设备控制进行中的工作 |
+| **网络上的 Claude Code** | 从 claude.ai/code 发送消息到云会话                                             | Anthropic 云基础设施       | 无需本地设置                 | 启动任务而不需要本地设置     |
 
 ## 相关资源
 
