@@ -5,10 +5,6 @@ categories: [AI, 工具]
 tags: [claude, claude-code, remote-control]
 ---
 
-> 原文出处：https://code.claude.com/docs/zh-CN/remote-control
->
-> Documentation Index: https://code.claude.com/docs/llms.txt
-
 # 使用 Remote Control 从任何设备继续本地会话
 
 使用 Remote Control 从您的手机、平板电脑或任何浏览器继续本地 Claude Code 会话。适用于 claude.ai/code 和 Claude 移动应用。
@@ -265,3 +261,7 @@ Claude Code offers several ways to work when you're not at your terminal. They d
 * [CLI 参考](https://code.claude.com/docs/zh-CN/cli-reference)：包括 `claude remote-control` 的标志和命令的完整列表
 * [安全](https://code.claude.com/docs/zh-CN/security)：Remote Control 会话如何适应 Claude Code 安全模型
 * [数据使用](https://code.claude.com/docs/zh-CN/data-usage)：在本地和远程会话期间通过 Anthropic API 流动的数据
+
+> 原文出处：https://code.claude.com/docs/zh-CN/remote-control
+>
+> Documentation Index: https://code.claude.com/docs/llms.txt
