@@ -287,17 +287,17 @@
 
 Claude Code Action v1 使用简化的配置：
 
-| 参数                  | 描述                                                  | 必需   |
-| --------------------- | ----------------------------------------------------- | ------ |
-| `prompt`              | Claude 的说明（纯文本或 [skill](/zh-CN/skills) 名称） | 否\*   |
-| `claude_args`         | 传递给 Claude Code 的 CLI 参数                        | 否     |
-| `plugin_marketplaces` | 插件市场 Git URL 的换行符分隔列表                     | 否     |
-| `plugins`             | 执行前要安装的插件名称的换行符分隔列表                | 否     |
-| `anthropic_api_key`   | Claude API 密钥                                       | 是\*\* |
-| `github_token`        | 用于 API 访问的 GitHub 令牌                           | 否     |
-| `trigger_phrase`      | 自定义触发短语（默认："@claude"）                     | 否     |
-| `use_bedrock`         | 使用 Amazon Bedrock 而不是 Claude API                 | 否     |
-| `use_vertex`          | 使用 Google Vertex AI 而不是 Claude API               | 否     |
+| 参数                  | 描述                                                                              | 必需   |
+| --------------------- | --------------------------------------------------------------------------------- | ------ |
+| `prompt`              | Claude 的说明（纯文本或 [skill](https://code.claude.com/docs/zh-CN/skills) 名称） | 否\*   |
+| `claude_args`         | 传递给 Claude Code 的 CLI 参数                                                    | 否     |
+| `plugin_marketplaces` | 插件市场 Git URL 的换行符分隔列表                                                 | 否     |
+| `plugins`             | 执行前要安装的插件名称的换行符分隔列表                                            | 否     |
+| `anthropic_api_key`   | Claude API 密钥                                                                   | 是\*\* |
+| `github_token`        | 用于 API 访问的 GitHub 令牌                                                       | 否     |
+| `trigger_phrase`      | 自定义触发短语（默认："@claude"）                                                 | 否     |
+| `use_bedrock`         | 使用 Amazon Bedrock 而不是 Claude API                                             | 否     |
+| `use_vertex`          | 使用 Google Vertex AI 而不是 Claude API                                           | 否     |
 
 \*提示是可选的 - 当对 issue/PR 评论省略时，Claude 响应触发短语\
 \*\*对于直接 Claude API 是必需的，对于 Bedrock/Vertex 不是必需的
@@ -338,7 +338,7 @@ claude_args: "--max-turns 5 --model claude-sonnet-4-6 --mcp-config /path/to/conf
 
 您可以通过两种方式配置 Claude 的行为：
 
-1. **CLAUDE.md**：在您的仓库根目录的 `CLAUDE.md` 文件中定义编码标准、审查标准和项目特定规则。Claude 在创建 PR 和响应请求时将遵循这些指南。查看我们的 [Memory 文档](/zh-CN/memory)了解更多详情。
+1. **CLAUDE.md**：在您的仓库根目录的 `CLAUDE.md` 文件中定义编码标准、审查标准和项目特定规则。Claude 在创建 PR 和响应请求时将遵循这些指南。查看我们的 [Memory 文档](https://code.claude.com/docs/zh-CN/memory)了解更多详情。
 2. **自定义提示**：在工作流文件中使用 `prompt` 参数提供工作流特定的说明。这允许您为不同的工作流或任务自定义 Claude 的行为。
 
 Claude 在创建 PR 和响应请求时将遵循这些指南。
