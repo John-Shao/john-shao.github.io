@@ -73,10 +73,3 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 | :------- | :-------------------- |
 | 个人账号 | `~/.ssh/id_john_shao` |
 | 工作账号 | `~/.ssh/id_work_name` |
-
-> **无需手动编辑 `~/.ssh/config` 文件**——在克隆仓库或配置 remote 时直接指定密钥即可：
->
-> ```bash
-> GIT_SSH_COMMAND="ssh -i ~/.ssh/id_john_shao" git clone git@github.com:john-shao/repo.git
-> ```
-{: .prompt-info }
